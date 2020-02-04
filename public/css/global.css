@@ -23,6 +23,7 @@ time, mark, audio, video {
 
 body {
     line-height:1;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 }
 
 article,aside,details,figcaption,figure,
@@ -93,4 +94,38 @@ hr {
 
 input, select {
     vertical-align:middle;
+}
+
+.coming-soon {
+    color: #FFFFFF;
+    background: url('../images/beach-bench-boardwalk-clouds-462024.jpg') no-repeat top center fixed; 
+    background-color: #003f9e;
+    height: 100vh;
+    width: 100vw;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+    .coming-soon h1 {
+        font-size: 4rem;
+        margin-bottom: 30px;
+    }
+    .coming-soon p {
+        font-size: 14px;
+        margin-bottom: 30px;
+        line-height: 30px;
+    }
+    .coming-soon a {
+        color: white;
+    }
+    .coming-soon a:hover {
+        color: #f5801f;
+    }
+.coming-logo {
+    width: 150px;
+    padding: 10px 20px;
+    border: 3px solid #FFFFFF;
 }

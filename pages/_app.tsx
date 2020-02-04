@@ -1,8 +1,29 @@
 import { AppProps } from 'next/app';
-import '../static/css/global.css';
+import Head from 'next/head';
+import '../public/css/global.css';
+
 
 function MyApp({ Component, pageProps }: AppProps ) {
-    return <Component {...pageProps}
+    return (
+        <>
+            <Head>
+                <meta charSet="utf-8" />
+                <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"></meta>
+                <link rel="icon" type="image/x-con" href="/images/pg55_logo_l.png" />
+                <title>Pangea55</title>
+                <meta
+                    property="og:image"
+                    content="http://pangea55.com/pg55_logo_l.png"
+                />
+                <meta property="og:image:width" content="600" />
+                <meta property="og:image:height" content="315" />
+                <meta property="og:url" content="http://www.pangea55.com" />
+                <meta property="og:title" content="Pangea55" />
+                <meta name="keyword" content="pangea55" />
+            </Head>
+            <Component {...pageProps} />
+        </>
+    )
 }
 
 export default MyApp;
