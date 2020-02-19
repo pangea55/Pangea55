@@ -7,6 +7,20 @@ function MyApp({ Component, pageProps }: AppProps ) {
     return (
         <>
             <Head>
+                <script
+                    async
+                    src={`https://www.googletagmanager.com/gtag/js?id=UA-158754763-1`}
+                />
+                <script
+                    dangerouslySetInnerHTML={{
+                    __html: `
+                        window.dataLayer = window.dataLayer || [];
+                        function gtag(){dataLayer.push(arguments);}
+                        gtag('js', new Date());
+                        gtag('config', 'UA-158754763-1');
+                    `,
+                    }}
+                />
                 <meta charSet="utf-8" />
                 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"></meta>
                 <link rel="icon" type="image/x-con" href="/images/pg55_logo_l.png" />
