@@ -20,7 +20,7 @@
   },
   "homepage": "https://github.com/pangea55/Pangea55#readme",
   "dependencies": {
-    "next": "^9.2.1",
+    "next": "^11.1.3",
     "node-cmd": "^3.0.0",
     "pm2": "^4.2.3",
     "react": "^16.12.0",
